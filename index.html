@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bryce Chimene</title>
+</head>
+
+<body class="dark-mode">
+    
+    <header class="header">
+        <nav class="quicklinks">
+          <div class="name"><a href="#home" class="namelink"><span class="initialname">BC</span>Bryce Chimene</a></div>
+
+          <div class="buttonlinks">
+            <ul class="menu-list" id="mylinks">
+              <li><a href="#home" class="home">HOME</a></li>
+              <li><a href="#about" class="about">ABOUT</a></li>
+              <li><a href="#resume" class="resume">RESUME</a></li>
+              <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
+              <li><a href="#contacts" class="contacts">CONTACT</a></li>
+              <li><label class="switch">
+                <input type="checkbox" onclick="toggleMode()">
+                <span class="slider round"></span>
+              </label></li>
+            </ul>
+          </div>
+          <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" onclick="toggleMenu()">
+          <label for="checkbox4">
+              <div class="hamburger hamburger4">
+                  <span class="bar bar1"></span>
+                  <span class="bar bar2"></span>
+                  <span class="bar bar3"></span>
+                  <span class="bar bar4"></span>
+                  <span class="bar bar5"></span>
+              </div>
+          </label>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <img src="images/dummyimage.jpg" class="profilepic">
+        <div class="sidebarcontent">
+            <div class="panelname">Bryce Powell-Chimene</div>
+            <div class="profession">Software-Engineer</div>
+            <div class="bottominfo">
+                Phone #: (936)-776-9576<br>
+                Email: brycechimene@yahoo.com
+            </div>
+            
+        </div>
+    </aside>
+
+    <section class="juice">
+
+        <section id="home" class="homecontent">
+          <h1 class="linked">HOME</h1>
+          <div class="intro">
+            <h1 class="introtitle">WELCOME!</h1>
+            <p class="introtext">This website have been built from scratch using HTML, CSS, and Javascript.</p>
+          </div>
+        </section>
+
+        <section id="about" class="aboutcontent">
+            <h1 class="linked">ABOUT</h1>
+            <div class="bluevar">MY STORY</div>
+              <p>
+                My full name is Bryce Joseph Powell-Chimene and I was born on December 3rd, 2001 to my mother Jessica Powell-Chimene, and father Joe Chimene. I grew up in Dayton, Texas alongside three older brothers and was always playing a sport. Usually, it was American Football but if not that then it was basketball. Technology was always a fascination to me since I enjoyed competing with my brothers in video games but thats not what officially made my decision with the software engineering.
+                <br><br>
+                It started when my brother was taking multiple computer classes in high-school and I was just an athlete at the time so all I cared about was sports but I was also interested with the inner workings of computers because I have always watched my brother make apps at home. Therefore a decision was made and I also was taking all the computer classes I could in high-school. From then on I built a passion for coding and creating things from scratch.
+                <br><br>
+                I now attend Texas Lutheran University and will be graduating in may of 2024, where I will then pursue to attain a Software-Engineer occupation. With that said my long-term goal with this job acquired is to continue learning about code and retire as a Senior Software-Engineer.
+              </p>
+
+              <div class="container">
+                <div class="row">
+                  <div class="bluevar">AGE:</div>
+                  <div class="separator"></div>
+                  <div class="column">21</div>
+                </div>
+                <div class="row">
+                  <div class="bluevar">RESIDENCE:</div>
+                  <div class="separator"></div>
+                  <div class="column">USA</div>
+                </div>
+                <div class="row">
+                  <div class="bluevar">FREELANCE:</div>
+                  <div class="separator"></div>
+                  <div class="column">Nonavailable</div>
+                </div>
+                <div class="row">
+                  <div class="bluevar">ADDRESS:</div>
+                  <div class="separator"></div>
+                  <div class="column">Texas</div>
+                </div>
+                <div class="row">
+                  <div class="bluevar">PHONE:</div>
+                  <div class="separator"></div>
+                  <div class="column">+1 936 776 9576</div>
+                </div>
+                <div class="row">
+                  <div class="bluevar">E-MAIL:</div>
+                  <div class="separator"></div>
+                  <div class="column">brycechimene@ yahoo.com</div>
+                </div>
+              </div>
+
+        </section>
+
+        <section id="resume" class="resumecontent">
+          <h1 class="linked">RESUME</h1>
+          <p>Highly motivated student athlete majoring in Computer Science within the University of Texas Lutheran, who is committed and always pursing to learn and discover new limits.
+          </p>
+          <h2 class="resumeheader">Education</h2>
+          <div class="resumesubheader">STUDIED AT</div>
+
+
+          <div id="div1" class="tlu active" style="display:block;">
+            <div class="schooldate">2020 - 2024</div>
+            <h1 class="tluname">Texas Lutheran University</h2>
+            <div class="tluinfo">
+              B.Sc. in Computer Science |
+              Minor in Mathmatics
+              <ul class="tlulist">
+                <li>GPA: 3.5</li>
+                <li class="nslshover">NSLS</li>
+                <li>Dean's List</li>
+                <li>Track and Field</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="div2" class="tlu">
+            <div id="scrollContainer">
+              <h2>Courses from my Major/Minor</h2>
+              <table class="coursetable">
+                <tr>
+                  <th class="classname">Object-Oriented Design & Methodology (JAVA)</th>
+                  <th class="classname">Database Design (SQL)</th>
+                  <th class="classname">Application Software</th>
+                </tr>
+                <tr>
+                  <th class="classcode">Software Dev. and Prof. Practice (JAVA)</th>
+                  <th class="classcode">Machine Learning (PYTHON)</th>
+                  <th class="classcode">Applied Statistics 1 & 2</th>
+                </tr>
+                <tr>
+                  <th class="classname">Data Structures & Algorithms (JAVA)</th>
+                  <th class="classname">Comp. Arch. and Oper. System</th>
+                  <th class="classname">Calculus 1 & 2</th>
+                </tr>
+                <tr>
+                  <th class="classcode">Object Oriented Programming (PYTHON)</th>
+                  <th class="classcode">Discrete Mathmatics</th>
+                  <th class="classcode">Unix Programming</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <button id="sliderButton" class="togglebutton" onclick="toggleSlider()">Toggle Slider</button>
+
+          <h2 class="resumeheader">Coding Skills</h2>
+          <div class="resumesubheader">DEVELOPING ON</div>
+          <div class="codingdiagrams">
+
+            <div class="htmlcss">
+              <div class="htmlcss-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              <div class="htmlcss-text">
+                <h1 class="codingheaders">HTML/CSS</h1>
+              </div>
+            </div>
+
+            <div class="javascript">
+              <div class="javascript-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">60%</div>
+              <div class="java-text">
+                <h1 class="codingheaders">JAVASCRIPT</h1>
+              </div>
+            </div>
+
+            <div class="python">
+              <div class="python-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              <div class="python-text">
+                <h1 class="codingheaders">PYTHON</h1>
+              </div>
+            </div>
+
+            <div class="java">
+              <div class="java-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              <div class="python-text">
+                <h1 class="codingheaders">JAVA</h1>
+              </div>
+            </div>
+
+            <div class="sql">
+              <div class="sql-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              <div class="sql-text">
+                <h1 class="codingheaders">SQL</h1>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="resumeheader">Profession Skills</h2>
+          <div class="resumesubheader">TEAM ORIENTED</div>
+          <div class="allprofessiondiagrams">
+
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">COLLABORATION</h1>
+              <div class="professioncontainer">
+                <div class="skills collaboration"><p class="percent">90%</p></div>
+              </div>
+            </div>
+
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">PROBLEM SOLVING</h1>
+              <div class="professioncontainer">
+                <div class="skills problem"><p class="percent">85%</p></div>
+              </div>
+            </div>
+
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">CRITICAL THINKING</h1>
+              <div class="professioncontainer">
+                <div class="skills thinking"><p class="percent">95%</p></div>
+              </div>
+            </div>
+
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">ADAPTABILITY</h1>
+              <div class="professioncontainer">
+                <div class="skills adapt"><p class="percent">90%</p></div>
+              </div>
+            </div>
+            
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">RESILENCE</h1>
+              <div class="professioncontainer">
+                <div class="skills resilence"><p class="percent">70%</p></div>
+              </div>
+            </div>
+
+            <div class="professiondiagrams">
+              <h1 class="professionheaders">LEADERSHIP</h1>
+              <div class="professioncontainer">
+                <div class="skills leader"><p class="percent">80%</p></div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+
+        <section id="portfolio" class="portfoliocontent">
+          <h1 class="linked">PORTFOLIO</h1>
+
+          <div class="portcontainer">
+
+            <div class="projectcontainer">
+              <div id="overlay1" onclick="off()">
+                <div class="quickinfo">
+                  <div class="overlaycard">
+                    <img src="images/dummyimage.jpg" class="cardimage">
+                    <div class="projecttext">
+                      <h1 class="wordtitle">ABOUT</h1>
+                      <h2 class="cardtitle">PORTFOLIO / RESUME WEBSITE</h2>
+                      <h1 class="wordtitle">HTML &nbsp; CSS &nbsp; JAVASCRIPT</h1>
+                      <p class="projectdescription">
+                        This is the website you are looking at now and it is meant to be just a brief introduction about me and my skills.<br><br>
+                        It has been built and inspired all on my own using HTML, CSS, and Javascript.<br><br>
+                        If there are any questions or advice to give about this website then feel free to contact me.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="underlay" onclick="on1()">
+                <div class="portimage">
+                  <div class="fadein">
+                    <div class="fadeintext">+</div>
+                  </div>
+                  <img src="images/dummyimage.jpg" class="coverimage">
+                </div>
+                <h1 class="description">TITLE</h1>
+                <h2 class="projectname">PORTFOLIO WEBSITE</h2>
+              </div>
+            </div>
+
+            <div class="projectcontainer">
+              <div id="overlay2" onclick="off()">
+                <div class="quickinfo">
+                  <div class="overlaycard">
+                    <img src="images/wineclassification.png" class="cardimage">
+                    <div class="projecttext">
+                      <h1 class="wordtitle">ABOUT</h1>
+                      <h2 class="cardtitle">WINE QUALITY CLASSIFICATION</h2>
+                      <h1 class="wordtitle">PYTHON</h1>
+                      <p class="projectdescription">
+                        This is a Machine Learning project that predicts the quality of Red and White Wine out of (bad, good, or excellent) categories using these following features: sulfur dioxide, density, pH, sulphates, alcohol, and many more.<br><br>
+                        It was coded in a Jupyter Notebook environment and takes advantage of Libraries such as pandas, numpy, matplotlib, sklearn, ect. While the database came from an outside trusted source, I did have to do a lot analyzing with charts and preprocessing to get a better categorial numbers.<br><br>
+                        If there are any questions or concerns about this project then feel free to contact me.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="underlay" onclick="on2()">
+                <div class="portimage">
+                  <div class="fadein">
+                    <div class="fadeintext">+</div>
+                  </div>
+                  <img src="images/wineclassification.png" class="coverimage">
+                </div>
+                <h1 class="description">TITLE</h1>
+                <h2 class="projectname">WINE CLASSIFICATION</h2>
+              </div>
+            </div>
+
+            <div class="projectcontainer">
+              <div id="overlay3" onclick="off()">
+                <div class="quickinfo">
+                  <div class="overlaycard">
+                    <img src="images/SnakeEyesCover.png" class="cardimage">
+                    <div class="projecttext">
+                      <h1 class="wordtitle">ABOUT</h1>
+                      <h2 class="cardtitle">SNAKE EYES GUI</h2>
+                      <h1 class="wordtitle">JAVA</h1>
+                      <p class="projectdescription">
+                        This project demostrates java skills by creating a graphical user interface that allows the user/player to continuously roll a pair of dice until they both land on one (snake-eyes).<br><br>
+                        The score is accumulated by what you roll each throw and added to the overall. Through each roll the graphical pair of dice showcases what you got. This was coded on MobaXterm which is a known Unix environment.<br><br>
+                        If there are any questions or concerns about this project then feel free to contact me.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="underlay" onclick="on3()">
+                <div class="portimage">
+                  <div class="fadein">
+                    <div class="fadeintext">+</div>
+                  </div>
+                  <img src="images/SnakeEyesCover.png" class="coverimage">
+                </div>
+                <h1 class="description">TITLE</h1>
+                <h2 class="projectname">SNAKE EYES GAME</h2>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="contacts" class="contactscontent">
+          <h1 class="linked">CONTACT</h1>
+          <div class="bluevar" id="letstalk">LET'S TALK</div>
+          <div class="sidebyside">
+
+            <form class="form" action="https://formsubmit.co/04fbca157f0212a11bf0e15c7384eea2" method="POST">
+              <input type="hidden" name="_subject" value="Submission from Resume Website!">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none">
+
+              <label class="nameboxt" for="fullname">
+                <div class="nameboxt">FULL NAME</div></label><br>
+              <input class="namebox" name="Name" type="text" id="fullname" placeholder="ej.: Sarah Marie Hunt" required><br>
+
+              <label class="emailboxt" for="emailaddress">
+                <div class="emailboxt">EMAIL ADDRESS</div></label><br>
+              <input class="emailbox" name="Email" type="email" id="emailaddress" placeholder="example@domain.com" required><br>
+              
+              <label class="messageboxt" for="message">
+                <div class="messageboxt">MESSAGE</div>
+              </label><br>
+              <textarea class="messagebox" name="Message" type="text" id="message" placeholder="To Write" required></textarea><br>
+
+              <input class="submit" type="submit" value="SEND MESSAGE  >">
+            </form>
+
+            <section class="me">
+              <div class="metitle">Bryce Chimene</div>
+              <p class="underme">Software-Engineer</p>
+              <div class="info-item">
+                <span class="info-label">AGE:</span> &nbsp; 21
+              </div>
+              <div class="info-item">
+                <span class="info-label">RESIDENCE:</span> &nbsp; USA
+              </div>
+              <div class="info-item">
+                <span class="info-label">FREELANCE:</span> &nbsp; NonAvailable
+              </div>
+              <div class="info-item">
+                <span class="info-label">ADDRESS:</span> &nbsp; Texas
+              </div>
+              <div class="info-item">
+                <span class="info-label">PHONE:</span> &nbsp; +1 936 776 9576
+              </div>
+              <div class="info-item">
+                <span class="info-label">E-MAIL:</span> &nbsp; brycechimene@yahoo.com
+              </div>
+              <div class="signature">Bryce Chimene</div>
+            </section>
+
+
+          </div>
+        </section>
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
