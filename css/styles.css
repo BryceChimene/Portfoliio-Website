@@ -37,7 +37,6 @@ body{
     opacity: 0;
     width: 0;
     height: 0;
-    
 }  
 .slider {
     position: absolute;
@@ -92,13 +91,12 @@ input:checked + .slider:before {
 .sidebar{
     position: fixed;
     top: 95px;
-    left: 5px;
+    left: 20px;
     bottom: 20px;
     width: 29%;
     background-color: var(--header-bg-color);
     box-shadow: 0 0 5px var(--accent-text-color);
     border-radius: 40px;
-    margin-left: 20px;
 }
 
 
@@ -164,7 +162,6 @@ input:checked + .slider:before {
     margin-top: 10px;
     text-align: center;
     justify-content: space-between;
-
 }
 
 .menu-list{
@@ -897,6 +894,7 @@ input:checked + .slider:before {
         scrollbar-width: none;  /* Firefox */
         overflow-x: hidden;
         width: 100%;
+        margin-left: 0;
     }
     .header {
         position: fixed;
@@ -913,13 +911,12 @@ input:checked + .slider:before {
         
     }
     .sidebar {
-        width: 100%;
         position: relative;
-        height: auto;
-        margin-left: 0;
-        border-radius: 0px;
-        left: 0;
+        height: fit-content;
+        border-radius: 0;
         top: 50px;
+        width: 100%;
+        left: 0px;
         border: none;
         box-shadow: none;
         padding-top: 10px;
