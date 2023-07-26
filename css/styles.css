@@ -102,6 +102,7 @@ input:checked + .slider:before {
     box-shadow: 0 0 5px var(--accent-text-color);
     border-radius: 40px;
     margin-left: 20px;
+    text-decoration: none;
 }
 
 
@@ -134,7 +135,7 @@ input:checked + .slider:before {
     background-color: var(--accent-text-color);
     padding: 8px;
     font-size: 15pt;
-    border-radius: 40px;
+    border-radius: 90px;
     color: black;
     font-family: Brush Script MT, Brush Script Std, cursive;
     box-shadow: 0 0 10px var(--bg-color) inset;
@@ -939,6 +940,9 @@ input:checked + .slider:before {
 
 @media (max-width: 680px){
 
+    body{
+        overflow-x: hidden;
+    }
     #mylinks{
         display: block;
         position: fixed;
@@ -952,7 +956,7 @@ input:checked + .slider:before {
         overflow: hidden;
     }
     #mylinks.open{
-        height: 58%;
+        height: 400px;
     }
     #mylinks ul{
         list-style: none;
@@ -1077,6 +1081,9 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 420px){
+    .body{
+        overflow-x: hidden;
+    }
     .codingdiagrams{
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         justify-items: center;        
