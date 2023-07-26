@@ -880,6 +880,14 @@ input:checked + .slider:before {
         margin-left: 30px;
     }
 
+    .menu-list{
+        width: 65%;
+    }
+
+    .name{
+        display: block;
+    }
+
     body::-webkit-scrollbar {
         display: none;
       }
@@ -988,7 +996,7 @@ input:checked + .slider:before {
         overflow: hidden;
     }
     #mylinks.open{
-        height: 400px;
+        height: fit-content;
     }
     #mylinks ul{
         list-style: none;
