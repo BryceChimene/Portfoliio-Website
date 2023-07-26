@@ -118,7 +118,7 @@ input:checked + .slider:before {
 
 .name{
     display: flex;
-    margin-top: -4px;
+    margin-top: -6px;
     font-weight: bolder;
     justify-content: center;
 }
@@ -142,7 +142,7 @@ input:checked + .slider:before {
     margin-right: 25px;
     margin-left: 20px;
     margin-top: -7px;
-    width: 25px;
+    width: 35px;
     height: 25px;
     float: left;
     text-align: center;
@@ -1001,7 +1001,6 @@ input:checked + .slider:before {
     }
     #mylinks li{
         display: list-item;
-        text-align: left;
     }
     #mylinks .switch{
         display: block;
