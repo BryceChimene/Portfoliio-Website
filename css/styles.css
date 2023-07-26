@@ -93,7 +93,7 @@ input:checked + .slider:before {
     top: 95px;
     left: 20px;
     bottom: 20px;
-    width: 29%;
+    width: 33%;
     background-color: var(--header-bg-color);
     box-shadow: 0 0 5px var(--accent-text-color);
     border-radius: 40px;
