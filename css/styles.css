@@ -856,18 +856,19 @@ input:checked + .slider:before {
 
 @media (max-height: 500px){
     .header{
-        width: 60%;
-        right: 26px;
+        width: 70%;
+        right: 25px;
         left: auto;
     }
     .name{
         display: none;
     }
     .menu-list{
-        width: 90%;
+        width: 80%;
     }
     .sidebar{
         top: 20px;
+        z-index: 10000;
     }
 }
 
