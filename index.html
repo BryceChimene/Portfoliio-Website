@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/styles.css">
   <title>Bryce Chimene</title>
 </head>
@@ -10,7 +11,7 @@
     
     <header class="header">
         <nav class="quicklinks">
-          <div class="name"><a href="#home" class="namelink"><span class="initialname">BC</span>Bryce Chimene</a></div>
+          <div class="name"><a href="#home" class="namelink"><span class="initialname">BC</span><span class="myname">Bryce Chimene</span></a></div>
 
           <div class="buttonlinks">
             <ul class="menu-list" id="mylinks">
@@ -20,7 +21,7 @@
               <li><a href="#portfolio" class="portfolio">PORTFOLIO</a></li>
               <li><a href="#contacts" class="contacts">CONTACT</a></li>
               <li><label class="switch">
-                <input type="checkbox" onclick="toggleMode()">
+                <input type="checkbox" class="visuallyHidden" onclick="toggleMode()">
                 <span class="slider round"></span>
               </label></li>
             </ul>
@@ -44,10 +45,11 @@
             <div class="panelname">Bryce Powell-Chimene</div>
             <div class="profession">Software-Engineer</div>
             <div class="bottominfo">
-                Phone #: (936)-776-9576<br>
+              <p>
+                Phone #: (936)-776-9576 <br>
                 Email: brycechimene@yahoo.com
+              </p>
             </div>
-            
         </div>
     </aside>
 

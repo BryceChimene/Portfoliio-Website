@@ -95,15 +95,15 @@ input:checked + .slider:before {
     position: fixed;
     top: 95px;
     left: 5px;
+    bottom: 20px;
     width: 29%;
-    height: 75%;
-    padding: 2%;
     background-color: var(--header-bg-color);
     box-shadow: 0 0 5px var(--accent-text-color);
     border-radius: 40px;
     margin-left: 20px;
-    text-decoration: none;
 }
+
+
 
 
 .juice{
@@ -147,6 +147,7 @@ input:checked + .slider:before {
     width: 25px;
     height: 25px;
     float: left;
+    text-align: center;
 }
 .myname{
     display: block;
@@ -299,7 +300,9 @@ input:checked + .slider:before {
 }
 
 .profilepic{
-    width: 80%;
+    margin-top: 20px;
+    max-height: 50%;
+    max-width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -307,21 +310,26 @@ input:checked + .slider:before {
     border: solid black;
 }
 .sidebarcontent{
-    text-align: center;
-    
+    display: flex;
+    flex-flow: column;
+    margin-top: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 .panelname{
-    padding-bottom: 10px;
-    font-size: 30pt;
-    font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    font-weight: bold;
+    font-size: 5.2vh;
 }
 .profession{
-    font-size: 20pt;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 4vh;
 }
 .bottominfo{
-    padding-top: 20px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2.2vh;
 }
 
 .linked{
@@ -851,7 +859,22 @@ input:checked + .slider:before {
 }
 
 
-
+@media (max-height: 500px){
+    .header{
+        width: 60%;
+        right: 26px;
+        left: auto;
+    }
+    .name{
+        display: none;
+    }
+    .menu-list{
+        width: 90%;
+    }
+    .sidebar{
+        top: 20px;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -892,10 +915,11 @@ input:checked + .slider:before {
         margin-left: 0;
         border-radius: 0px;
         left: 0;
-        top: 64px;
+        top: 50px;
         border: none;
         box-shadow: none;
-
+        padding-top: 10px;
+        margin-bottom: -40px;
     }
     
     .initialname{
@@ -1102,3 +1126,8 @@ input:checked + .slider:before {
         top: 60%;
     }
 }
+
+
+
+
+    
