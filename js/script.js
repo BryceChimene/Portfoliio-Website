@@ -62,5 +62,8 @@ window.addEventListener('resize', function() {
   }
 });
 
-
+function activateCheckbox(){
+  var checkbox = document.getElementById("checkbox4");
+  checkbox.checked = !checkbox.checked;
+}
 
