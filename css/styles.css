@@ -996,7 +996,7 @@ input:checked + .slider:before {
         padding: 0px;
     }
     #mylinks.open{
-        height: 290px;
+        height: 310px;
     }
     #mylinks ul{
         list-style: none;
