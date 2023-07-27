@@ -325,8 +325,6 @@ input:checked + .slider:before {
     text-align: center;
     margin-top: 15px;
     font-size: 2.2vh;
-    z-index: 1000;
-    display: block;
 }
 
 .linked{
@@ -981,11 +979,12 @@ input:checked + .slider:before {
     body{
         overflow-x: hidden;
     }
+
     #mylinks{
         display: block;
         position: fixed;
         background-color: var(--header-bg-color);
-        top: 55px;
+        top: 52px;
         width: 100%;
         left: 0;
         height: 0;
@@ -993,9 +992,11 @@ input:checked + .slider:before {
         transition: height 0.3s ease;
         overflow: hidden;
         opacity: .9;
+        padding-top: 0px;
+        padding: 0px;
     }
     #mylinks.open{
-        height: 47%;
+        height: 290px;
     }
     #mylinks ul{
         list-style: none;
@@ -1011,14 +1012,15 @@ input:checked + .slider:before {
     }
     #mylinks a{
         display: block;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 12px;
+        padding-top: 12px;
         text-align: center;
         font-size: 18pt;
     }
     #mylinks a:hover{
         background-color: var(--bg-color);
     }
+
 
     .hamburger2 .bar2,
     .hamburger3 .bar3,
