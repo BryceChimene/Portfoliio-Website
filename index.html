@@ -8,10 +8,11 @@
 </head>
 
 <body class="dark-mode">
-    
     <header class="header">
         <nav class="quicklinks">
-          <div class="name"><a href="#home" class="namelink"><span class="initialname">BC</span><span class="myname">Bryce Chimene</span></a></div>
+          <div class="name"><a href="#homeSection" class="namelink">
+            <span class="initialname">BC</span><span class="myname">Bryce Chimene</span></a>
+          </div>
 
           <div class="buttonlinks">
             <ul class="menu-list" id="mylinks" onclick="toggleMenu()" >
@@ -55,15 +56,21 @@
 
     <section class="juice">
 
-        <section id="home" class="homecontent">
+      <div id="homeSection"></div>
+      <div id="aboutSection"></div>
+      <div id="resumeSection"></div>
+      <div id="porfolioSection"></div>
+      <div id="contactsSection"></div>
+
+      <section id="home" class="homecontent">
           <h1 class="linked">HOME</h1>
           <div class="intro">
             <h1 class="introtitle">WELCOME!</h1>
             <p class="introtext">This website have been built from scratch using HTML, CSS, and Javascript.</p>
           </div>
-        </section>
+      </section>
 
-        <section id="about" class="aboutcontent">
+      <section id="about" class="aboutcontent">
             <h1 class="linked">ABOUT</h1>
             <div class="bluevar">MY STORY</div>
               <p>
@@ -107,9 +114,9 @@
                 </div>
               </div>
 
-        </section>
+      </section>
 
-        <section id="resume" class="resumecontent">
+      <section id="resume" class="resumecontent">
           <h1 class="linked">RESUME</h1>
           <p>Highly motivated student athlete majoring in Computer Science within the University of Texas Lutheran, who is committed and always pursing to learn and discover new limits.
           </p>
@@ -249,10 +256,10 @@
             </div>
             
           </div>
-        </section>
+      </section>
         
 
-        <section id="portfolio" class="portfoliocontent">
+      <section id="portfolio" class="portfoliocontent">
           <h1 class="linked">PORTFOLIO</h1>
 
           <div class="portcontainer">
@@ -348,9 +355,9 @@
             </div>
           </div>
 
-        </section>
+      </section>
 
-        <section id="contacts" class="contactscontent">
+      <section id="contacts" class="contactscontent">
           <h1 class="linked">CONTACT</h1>
           <div class="bluevar" id="letstalk">LET'S TALK</div>
           <div class="sidebyside">
@@ -405,8 +412,23 @@
 
 
           </div>
-        </section>
+      </section>
 
     </section>
     <script src="js/script.js"></script>
+    <script>
+      // Fetch and load external HTML files for each section
+      async function loadSection(sectionId, fileName) {
+        const response = await fetch(fileName);
+        const sectionContent = await response.text();
+        document.getElementById(sectionId).innerHTML = sectionContent;
+      }
+  
+      // Load each section
+      loadSection('homeSection', 'sections/home.html');
+      loadSection('aboutSection', 'sections/about.html');
+      loadSection('resumeSection', 'sections/resume.html');
+      loadSection('portfolioSection', 'sections/portfolio.html');
+      loadSection('contactsSection', 'sections/contacts.html');
+    </script>
 </body>
