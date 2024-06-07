@@ -4,27 +4,45 @@ function toggleMode() {
   body.classList.toggle('light-mode');
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-  var div1 = document.getElementById("div1");
-  var div2 = document.getElementById("div2");
-  var button = document.getElementById("sliderButton");
+// Toggles Course View in 3_resume.html
+document.getElementById('sliderButton').addEventListener('click', function() {
   
-  button.innerHTML = "Show Courses >";
-  
-  function toggleSlider() {
-    if (div1.style.display === "block") {
-      div1.style.display = "none";
-      div2.style.display = "block";
-      button.innerHTML = "< Show Schools";
-    } else {
-      div2.style.display = "none";
-      div1.style.display = "block";
-      button.innerHTML = "Show Courses >";
-    }
+  var div1 = document.getElementById('div1');
+  var div2 = document.getElementById('div2');
+
+  if (div1.classList.contains('visible')) {
+      div1.classList.remove('visible');
+      div1.classList.add('hidden');
+      div2.classList.remove('hidden');
+      div2.classList.add('visible');
+  } else {
+      div1.classList.remove('hidden');
+      div1.classList.add('visible');
+      div2.classList.remove('visible');
+      div2.classList.add('hidden');
   }
-  
-  button.addEventListener("click", toggleSlider);
+
 });
+
+function toggleDiv(divid)
+  {
+ 
+    varon = divid + 'on';
+    varoff = divid + 'off';
+ 
+    if(document.getElementById(varon).style.display == 'block')
+    {
+    document.getElementById(varon).style.display = 'none';
+    document.getElementById(varoff).style.display = 'block';
+    }
+   
+    else
+    {  
+    document.getElementById(varoff).style.display = 'none';
+    document.getElementById(varon).style.display = 'block'
+    }
+} 
+
 
 
 function off() {

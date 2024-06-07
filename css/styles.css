@@ -72,7 +72,6 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-
 .header{
     position: fixed;
     z-index: 60;
@@ -87,7 +86,6 @@ input:checked + .slider:before {
     border-radius: 40px;
 }
 
-
 .sidebar{
     position: fixed;
     top: 95px;
@@ -99,9 +97,6 @@ input:checked + .slider:before {
     border-radius: 40px;
 }
 
-
-
-
 .juice{
     margin-top: 60px;
     margin-left: 38%;
@@ -112,7 +107,6 @@ input:checked + .slider:before {
     border-right: solid black;
 
 }
-
 
 .name{
     display: flex;
@@ -242,6 +236,56 @@ input:checked + .slider:before {
 
 }
 
+/* '_' Sidebar style */
+.profilepic{
+    margin-top: 20px;
+    max-height: 50%;
+    max-width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 40px;
+    border: solid black;
+}
+.sidebarcontent{
+    display: flex;
+    flex-flow: column;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.panelname{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.2vh;
+}
+.profession{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 4vh;
+}
+.bottominfo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2.2vh;
+}
+
+.linked{
+    position: relative;
+    z-index: 50;
+    background-color: var(--header-bg-color);
+    padding: 10px;
+    text-align: center;
+    margin-left: -13%;
+    width: fit-content;
+    border-radius: 40px;
+    font-size: 30pt;
+    padding-left: 30px;
+    padding-right: 25px;
+    box-shadow: 0 0 10px var(--header-bg-color);
+}
+
+/* '1' home style */
 .intro{
     position: relative;
     text-align: center;
@@ -294,55 +338,7 @@ input:checked + .slider:before {
     transform: translate(-50%, -50%);
 }
 
-.profilepic{
-    margin-top: 20px;
-    max-height: 50%;
-    max-width: 80%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 40px;
-    border: solid black;
-}
-.sidebarcontent{
-    display: flex;
-    flex-flow: column;
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.panelname{
-    text-align: center;
-    font-weight: bold;
-    font-size: 5.2vh;
-}
-.profession{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 4vh;
-}
-.bottominfo{
-    text-align: center;
-    margin-top: 15px;
-    font-size: 2.2vh;
-}
-
-.linked{
-    position: relative;
-    z-index: 50;
-    background-color: var(--header-bg-color);
-    padding: 10px;
-    text-align: center;
-    margin-left: -13%;
-    width: fit-content;
-    border-radius: 40px;
-    font-size: 30pt;
-    padding-left: 30px;
-    padding-right: 25px;
-    box-shadow: 0 0 10px var(--header-bg-color);
-
-}
-
+/* '2' About Section Style */
 .container {
     display: grid;
     align-items: center;
@@ -365,6 +361,7 @@ input:checked + .slider:before {
     color: var(--accent-text-color);
 }
 
+/* '3' Resume Section Style */
 .tlulist{
     list-style-type: none;
 }
@@ -382,11 +379,17 @@ input:checked + .slider:before {
     margin-top: 50px;  
 }
 
-#div1{
+.hidden {
+    display: none;
+}
+
+.visible {
     display: block;
 }
+
+#div1{
+}
 #div2{
-    display: none;
     margin-top: -50px;
 }
 
@@ -449,157 +452,6 @@ input:checked + .slider:before {
 }
 .classname{
     background-color: var(--header-bg-color);
-}
-
-.sidebyside{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-gap: 20px;
-}
-.form{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.nameboxt{
-    position: relative;
-    margin-bottom: -30px;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 50;
-    background-color: var(--bg-color);    
-    width:max-content;
-}
-.namebox{
-    background-color: transparent;
-    height: 50px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    border: grey solid .5px;
-    padding-left: 30px;
-    color: var(--text-color);
-    width: 85%;
-}
-.emailboxt{
-    position: relative;
-    margin-bottom: -30px;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 50;
-    background-color: var(--bg-color);
-    width:fit-content;
-}
-.emailbox{
-
-    background-color: transparent;
-    height: 50px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    border: grey solid .5px;
-    padding-left: 30px;
-    color: var(--text-color);
-    width: 85%;
-}
-.messageboxt{
-    position: relative;
-    margin-bottom: -30px;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 50;
-    background-color: var(--bg-color);
-    width:fit-content;
-}
-.messagebox{
-    background-color: transparent;
-    height: 150px;
-    margin-bottom: 30px;
-    border-radius: 30px;
-    border: grey solid .5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    resize: none;
-    color: var(--text-color);
-    width: 77%;
-}
-
-
-.messagebox::-webkit-scrollbar {
-    display: block;
-    width: 10px;
-    padding-right: 10px;
-}
-.messagebox::-webkit-scrollbar-track {
-    background: transparent;
-}
-.messagebox::-webkit-scrollbar-thumb {
-    background-color: var(--accent-text-color);
-    border-right: none;
-    border-left: none;
-    border-radius: 30px;
-
-}
-.messagebox::-webkit-scrollbar-track-piece:end{
-    background-color: white;
-    margin-bottom: 15px;
-    border-radius: 30px;
-    margin-right: 10px;
-}
-.messagebox::-webkit-scrollbar-track-piece:start{
-    background-color: white;
-    margin-top: 15px;
-    border-radius: 30px;
-    margin-right: 10px;
-}
-.submit{
-    background-color: transparent;
-    border-radius: 30px;
-    border: grey solid .5px;
-    color: var(--text-color);
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    cursor: pointer;
-}
-.submit:hover{
-    color: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-}
-
-
-.me{
-    border: grey solid .5px;
-    border-radius: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
-    margin-top: 55px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-.info-item{
-    margin-top: 20px;
-}
-.info-label{
-    color: var(--accent-text-color);
-}
-.signature{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 25pt;
-}
-.underme{
-    color: var(--accent-text-color);
-    margin-top: 3px;
-    font-size: 10pt;
-}
-.metitle{
-    font-size: 20pt;
 }
 
 .codingdiagrams{
@@ -713,7 +565,7 @@ input:checked + .slider:before {
     margin-top: -25px;
 }
 
-
+/* '4' Portfolio Section Style */
 .portcontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -785,8 +637,6 @@ input:checked + .slider:before {
     font-size: 14pt;
 }
 
-
-
 #overlay1{
     position: fixed;
     display: none; 
@@ -853,6 +703,153 @@ input:checked + .slider:before {
     font-size: 12pt;
 }
 
+/* '5' Contact Section Style */
+.sidebyside{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+.form{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.nameboxt{
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 50;
+    background-color: var(--bg-color);    
+    width:max-content;
+}
+.namebox{
+    background-color: transparent;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: grey solid .5px;
+    padding-left: 30px;
+    color: var(--text-color);
+    width: 85%;
+}
+.emailboxt{
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 50;
+    background-color: var(--bg-color);
+    width:fit-content;
+}
+.emailbox{
+
+    background-color: transparent;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: grey solid .5px;
+    padding-left: 30px;
+    color: var(--text-color);
+    width: 85%;
+}
+.messageboxt{
+    position: relative;
+    margin-bottom: -30px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 50;
+    background-color: var(--bg-color);
+    width:fit-content;
+}
+.messagebox{
+    background-color: transparent;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: grey solid .5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    resize: none;
+    color: var(--text-color);
+    width: 77%;
+}
+.messagebox::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+    padding-right: 10px;
+}
+.messagebox::-webkit-scrollbar-track {
+    background: transparent;
+}
+.messagebox::-webkit-scrollbar-thumb {
+    background-color: var(--accent-text-color);
+    border-right: none;
+    border-left: none;
+    border-radius: 30px;
+
+}
+.messagebox::-webkit-scrollbar-track-piece:end{
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.messagebox::-webkit-scrollbar-track-piece:start{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.submit{
+    background-color: transparent;
+    border-radius: 30px;
+    border: grey solid .5px;
+    color: var(--text-color);
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+.submit:hover{
+    color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+}
+.me{
+    border: grey solid .5px;
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    margin-top: 55px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-item{
+    margin-top: 20px;
+}
+.info-label{
+    color: var(--accent-text-color);
+}
+.signature{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 25pt;
+}
+.underme{
+    color: var(--accent-text-color);
+    margin-top: 3px;
+    font-size: 10pt;
+}
+.metitle{
+    font-size: 20pt;
+}
 
 @media (max-height: 500px){
     .header{
@@ -1130,8 +1127,4 @@ input:checked + .slider:before {
         top: 60%;
     }
 }
-
-
-
-
-    
+   
