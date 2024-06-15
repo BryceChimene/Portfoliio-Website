@@ -343,12 +343,13 @@ strong {
 
 #typewriter {
     position: relative;
-    display: block;
+    display: inline-block;
     font-size: 34px;
     font-weight: 600;
+    margin-bottom: 20px;
     font-family: "Raleway", serif !important;
     color: var(--accent-text-color);
-    margin-bottom: 20px;
+    height: fit-content;
 }
 
 .cursor {
