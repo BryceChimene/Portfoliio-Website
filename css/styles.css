@@ -343,6 +343,7 @@ strong {
 
 #typewriter {
     position: relative;
+    display: block;
     font-size: 34px;
     font-weight: 600;
     font-family: "Raleway", serif !important;
