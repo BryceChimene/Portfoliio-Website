@@ -4,29 +4,40 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Bryce Chimene</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>BryceChimene | Portfolio</title>
+  <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml" />
 </head>
 
 <body class="dark-mode">
 
   <header class="header">
     <nav class="quicklinks">
-      <div class="name"><a href="#homeSection" class="namelink">
-          <span class="initialname">BC</span><span class="myname">Bryce Chimene</span></a>
-      </div>
-
+      <div><a href="#homeSection" class="namelink">Bc.</a></div>
       <div class="buttonlinks">
         <ul class="menu-list" id="mylinks" onclick="toggleMenu()">
-          <li><a href="#homeSection" class="home" onclick="activateCheckbox()">HOME</a></li>
-          <li><a href="#aboutSection" class="about" onclick="activateCheckbox()">ABOUT</a></li>
-          <li><a href="#resumeSection" class="resume" onclick="activateCheckbox()">RESUME</a></li>
-          <li><a href="#portfolioSection" class="portfolio" onclick="activateCheckbox()">PORTFOLIO</a></li>
-          <li><a href="#contactsSection" class="contacts" onclick="activateCheckbox()">CONTACT</a></li>
-          <li><label class="switch">
+          <li class="hover-line"><a href="#homeSection" onclick="activateCheckbox()">
+            <span class="fa-regular fa-chess-rook"></span> Home</a>
+          </li>
+          <li class="hover-line"><a href="#aboutSection" onclick="activateCheckbox()">
+            <span class="fa-regular fa-user"></span> About</a>
+          </li>
+          <li class="hover-line"><a href="#resumeSection" onclick="activateCheckbox()">
+            <span class="fa-regular fa-file-lines"></span> Resume</a>
+          </li>
+          <li class="hover-line"><a href="#portfolioSection" onclick="activateCheckbox()">
+            <span class="fa-regular fa-folder"></span> Portfolio</a>
+          </li>
+          <li class="hover-line"><a href="#contactsSection" onclick="activateCheckbox()">
+            <span class="fa-regular fa-paper-plane"></span> Contact</a>
+          </li>
+          <li>
+            <label class="switch">
               <input type="checkbox" class="visuallyHidden" onclick="toggleMode()">
               <span class="slider round"></span>
-            </label></li>
+            </label>
+          </li>
         </ul>
       </div>
       <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" onclick="toggleMenu()">
@@ -43,21 +54,43 @@
   </header>
 
   <aside class="sidebar">
-    <img src="images/dummyimage.jpg" class="profilepic">
+    <img src="images/website-profile-pic.png" class="profilepic">
     <div class="sidebarcontent">
-      <div class="panelname">Bryce Powell-Chimene</div>
-      <div class="profession">Software-Engineer</div>
+      <div class="panelname">
+        <strong>Bryce</strong>
+        <small>Powell-Chimene</small></div>
+      <div class="profession">Software Engineer</div>
       <div class="bottominfo">
-        <p>
-          Phone #: (936)-776-9576 <br>
-          Email: brycechimene@ yahoo.com
-        </p>
+        <span>
+          <a href="tel:+4733378901">
+            <i class="fas fa-phone"></i> 936-776-9576
+          </a>
+        </span>
+        <span>
+          <a href="mailto:brycechimene@yahoo.com" target="_blank">
+            <i class="fas fa-envelope"></i> brycechimene@yahoo.com
+          </a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/chimenebryce/" target="_blank">
+            <i class="fa fa-linkedin-square"></i> LinkedIn/chimenebryce
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/BryceChimene" target="_blank">
+            <i class="fa fa-github"></i> GitHub/brycechimene
+          </a>
+        </span>
       </div>
     </div>
   </aside>
 
   <section class="juice">
     <div id="homeSection"></div>
+    <div id="typewriter">
+      <span id="typewrite"></span>
+      <div class="cursor"></div>
+    </div>
     <div id="aboutSection"></div>
     <div id="resumeSection"></div>
     <div id="portfolioSection"></div>
@@ -72,8 +105,11 @@
       const response = await fetch(fileName);
       const sectionContent = await response.text();
       document.getElementById(sectionId).innerHTML = sectionContent;
+      if (sectionId === 'homeSection') {
+        // Initialize typewriter effect after home section is loaded
+        typeWriter();
+      }
     }
-
     // Load each section
     loadSection('homeSection', 'sections/1_home.html');
     loadSection('aboutSection', 'sections/2_about.html');
@@ -81,5 +117,7 @@
     loadSection('portfolioSection', 'sections/4_portfolio.html');
     loadSection('contactsSection', 'sections/5_contact.html');
   </script>
+  <script src="https://kit.fontawesome.com/fae9cc4833.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -4,46 +4,21 @@ function toggleMode() {
   body.classList.toggle('light-mode');
 }
 
-// Toggles Course View in 3_resume.html
-document.getElementById('sliderButton').addEventListener('click', function() {
-  
-  var div1 = document.getElementById('div1');
-  var div2 = document.getElementById('div2');
+function toggleDiv(divid) {
 
-  if (div1.classList.contains('visible')) {
-      div1.classList.remove('visible');
-      div1.classList.add('hidden');
-      div2.classList.remove('hidden');
-      div2.classList.add('visible');
-  } else {
-      div1.classList.remove('hidden');
-      div1.classList.add('visible');
-      div2.classList.remove('visible');
-      div2.classList.add('hidden');
-  }
+  varon = divid + 'on';
+  varoff = divid + 'off';
 
-});
-
-function toggleDiv(divid)
-  {
- 
-    varon = divid + 'on';
-    varoff = divid + 'off';
- 
-    if(document.getElementById(varon).style.display == 'block')
-    {
+  if (document.getElementById(varon).style.display == 'block') {
     document.getElementById(varon).style.display = 'none';
     document.getElementById(varoff).style.display = 'block';
-    }
-   
-    else
-    {  
+  }
+
+  else {
     document.getElementById(varoff).style.display = 'none';
     document.getElementById(varon).style.display = 'block'
-    }
-} 
-
-
+  }
+}
 
 function off() {
   const divs = document.querySelectorAll("div[id^='overlay']");
@@ -51,7 +26,7 @@ function off() {
   for (let i = 0; i < divs.length; i++) {
     divs[i].style.display = "none";
   }
-  document.body.style.overflow = 'auto'; 
+  document.body.style.overflow = 'auto';
   document.body.style.overflowY = 'initial';
 }
 
@@ -73,15 +48,61 @@ function toggleMenu() {
   mobileMenu.classList.toggle('open');
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   const mobileMenu = document.getElementById('mylinks');
   if (window.innerWidth > 768) {
     mobileMenu.classList.remove('open');
   }
 });
 
-function activateCheckbox(){
+function activateCheckbox() {
   var checkbox = document.getElementById("checkbox4");
   checkbox.checked = !checkbox.checked;
 }
 
+let textBase = "";
+let jobs = ["Software Developer", "Freelancer", "Open Source Contributor", "Designer"];
+let jobIdx = 0;
+let i = 0;
+let reverse = false;
+
+function typeWriter() {
+  // Generate some random text jitter between 45 and 75 ms to simulate a keyboard
+  var textJitter = Math.floor(Math.random() * (70 - 45) + 45);
+
+  // Check if we want to remove text ('reverse'), or add it.
+  if (reverse) {
+    if (document.getElementById("typewrite").innerHTML.length > textBase.length) {
+      // We're still in the process of removing the job
+      document.getElementById("typewrite").innerHTML = document
+        .getElementById("typewrite")
+        .innerHTML.slice(0, -1);
+      setTimeout(typeWriter, textJitter);
+    } else {
+      // deleting done. Set next job, and repeat with typing by
+      // setting reverse to false
+      jobIdx = (jobIdx + 1) % jobs.length;
+      reverse = false;
+      setTimeout(typeWriter, 1000);
+    }
+  } else {
+    // We're adding text
+    if (i === (textBase + jobs[jobIdx]).length) {
+      // Line is done. Wait and then reverse
+      i = textBase.length;
+      reverse = true;
+
+      // Wait a second, then start deleting
+      setTimeout(typeWriter, 3000);
+    } else {
+      // Write text like a typewriter
+      if (i < (textBase + jobs[jobIdx]).length) {
+        document.getElementById("typewrite").innerHTML = document.getElementById("typewrite").innerHTML + (
+          textBase + jobs[jobIdx]
+        ).charAt(i);
+        i++;
+        setTimeout(typeWriter, textJitter);
+      }
+    }
+  }
+}
