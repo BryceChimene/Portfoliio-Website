@@ -346,10 +346,10 @@ strong {
     display: inline-block;
     font-size: 34px;
     font-weight: 600;
-    margin-bottom: 20px;
     font-family: "Raleway", serif !important;
     color: var(--accent-text-color);
-    height: fit-content;
+    height: 80px;
+    background-color: pink;
 }
 
 .cursor {
