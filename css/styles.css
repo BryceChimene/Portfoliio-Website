@@ -324,11 +324,10 @@ small {
 
 /* '1' home style */
 .intro {
-    position: relative;
-    display: block;
     vertical-align: left;
     height: fit-content;
     font-family: "Raleway", serif !important;
+    margin-bottom: 20px;
 }
 
 .intro h1 {
@@ -344,13 +343,11 @@ strong {
 }
 
 #typewriter {
-    position: relative;
     display: inline-block;
     font-size: 34px;
     font-weight: 600;
     font-family: "Raleway", serif !important;
     color: var(--accent-text-color);
-    height: 90px;
 }
 
 .cursor {
